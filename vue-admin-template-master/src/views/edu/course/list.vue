@@ -45,7 +45,7 @@
       border
       fit
       highlight-current-row
-      row-class-name="myClassList">>
+      row-class-name="myClassList">
 
       <el-table-column
         label="序号"
@@ -131,7 +131,7 @@ export default {
         //课程列表的方法
         getList(page=1){
             this.page=page
-            course.pageCourseList(
+            course.getListCourse(
                 this.page,this.limit,this.courseQuery
             )
             .then(response =>{//请求成功
